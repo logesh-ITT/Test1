@@ -1,5 +1,5 @@
-var Student_name:string='logesh'
-var Student_id:number=2002;
+var studentName:string='logesh'
+var studentId:number=2002;
 
-console.log(Student_name);
-console.log(Student_id);
+console.log(studentName);
+console.log(studentId);
