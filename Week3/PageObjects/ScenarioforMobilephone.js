@@ -8,7 +8,7 @@ class ScenarioForMobilePhone {
     cy.get('#productcompare2').should('be.visible').type('apple iphone x') //type in textbox
     cy.get('.txtp>.vinfo').last().click() //getting that mobilephone
     cy.get('#compareButton').should('be.visible').click() //click that compare button
-    return this
+    return this;
   }
 }
 export default ScenarioForMobilePhone;

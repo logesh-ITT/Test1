@@ -6,7 +6,7 @@ class ScenarioForLaptop {
         cy.title().should('eq', 'Laptops: Latest & Best Laptops online 2020, Laptop Finder with Price'); //validate the title
         cy.get('#brand_Dell').check().should('be.checked'); //click the checkbox
         cy.get('div:nth-child(1)>div._lpdscn>h3>a').first().click({ force: true }); //click the dell laptop
-        return this
+        return this;
     }
 }
 export default ScenarioForLaptop;
