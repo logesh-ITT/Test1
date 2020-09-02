@@ -1,6 +1,5 @@
 /// <reference types="Cypress" />
 class ScenarioforMobilephone {
-
   CompareMobiles() {
     return cy.contains('Compare').trigger('mouseover'); //mouseover to compare
   }
@@ -24,12 +23,3 @@ class ScenarioforMobilephone {
   }
 }
 export default ScenarioforMobilephone;
-
-
-
-
-
-
-
-
-
