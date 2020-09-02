@@ -1,16 +1,17 @@
-/// <reference types="Cypress" />
-class Scenarioforlaptop {
+import { createYield } from "typescript";
+class laptops {
     productFinderLaptops() {
         return cy.contains('Product Finder').trigger('mouseover');
     }
-    Laptoplink() {
+    laptoplink() {
         return cy.get('div>ul>li:nth-child(10)>ul>li:nth-child(3)>a');
     }
-    BrandCheckBox() {
+    brandCheckBox() {
         return cy.get('#brand_Dell');
     }
-    DellLaptop() {
+    dellLaptop() {
         return cy.get('div:nth-child(1)>div._lpdscn>h3>a');
     }
 }
-export default Scenarioforlaptop;
+export default laptops;
+ 
