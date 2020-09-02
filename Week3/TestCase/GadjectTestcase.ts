@@ -2,7 +2,7 @@ import ScenarioforMobilephone from '../PageObjects/ScenarioforMobilephone';
 import Scenarioforlaptop from '../PageObjects/Scenarioforlaptop';
 describe("NdtvGadjectsTestcases", function () {
     beforeEach(function () {
-        cy.visit('https://gadgets.ndtv.com/'); //Homepage 
+        cy.visit(' ') //Homepage 
     });
     it('Verify Laptops in ProductFinder', function () { 
         const laptop = new Scenarioforlaptop();
