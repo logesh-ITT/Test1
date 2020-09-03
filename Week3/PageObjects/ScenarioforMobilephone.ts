@@ -1,24 +1,32 @@
+/// <reference types="cypress" />
 class Mobilephones {
   compareMobiles() {
-    return cy.contains('Compare').trigger('mouseover'); //mouseover to compare
+    const comparetheMobiles:string = 'Compare'
+    return cy.contains(comparetheMobiles).trigger('mouseover');
   }
   clickTheMobiles() {
-    return cy.get('div>ul>li:nth-child(11)>ul>li:nth-child(1)>a');
+    const clickTheMobiles:string = 'div>ul>li:nth-child(11)>ul>li:nth-child(1)>a';
+    return cy.get(clickTheMobiles)
   }
   compareMobilesTextbox() {
-    return cy.get('#productcompare1');
+    const compareMobilesTextbox:string = '#productcompare1';
+    return cy.get(compareMobilesTextbox)
   }
   getMobilePhone() {
-    return cy.contains('Starts from ₹ 19,499')
+    const getMobilePhone:string = 'Starts from ₹ 19,499'
+    return cy.contains(getMobilePhone)
   }
   compareSecondMobilesTextbox() {
-    return cy.get('#productcompare2')
+    const compareSecondMobilesTextbox:string = '#productcompare2';
+    return cy.get(compareSecondMobilesTextbox)
   }
   getSecondMobilePhone() {
-    return cy.contains('Starts from ₹ 67,500')
+    const getSecondMobilePhone = 'Starts from ₹ 67,500';
+    return cy.contains(getSecondMobilePhone)
   }
   compareResult() {
-    return cy.get('#compareButton')
+    const compareResult:string = '#compareButton';
+    return cy.get(compareResult)
   }
 }
 export default Mobilephones;

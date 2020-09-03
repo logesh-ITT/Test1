@@ -1,17 +1,19 @@
-import { createYield } from "typescript";
 class laptops {
     productFinderLaptops() {
-        return cy.contains('Product Finder').trigger('mouseover');
+        const productFinderLaptops:string = 'Product Finder'
+        return cy.contains(productFinderLaptops).trigger('mouseover');
     }
     laptoplink() {
-        return cy.get('div>ul>li:nth-child(10)>ul>li:nth-child(3)>a');
+        const laptoplink:string = 'div>ul>li:nth-child(10)>ul>li:nth-child(3)>a';
+        return cy.get(laptoplink)
     }
     brandCheckBox() {
-        return cy.get('#brand_Dell');
+        const brandCheckBox:string = '#brand_Asus';
+        return cy.get(brandCheckBox)
     }
-    dellLaptop() {
-        return cy.get('div:nth-child(1)>div._lpdscn>h3>a');
+    asusLaptop() {
+        const asusLaptop:string = 'div:nth-child(1) > div._lpdscn > h3 > a'
+        return cy.get(asusLaptop)
     }
 }
 export default laptops;
- 
