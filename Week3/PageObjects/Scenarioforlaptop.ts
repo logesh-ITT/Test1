@@ -1,19 +1,19 @@
 class laptops {
-    productFinderLaptops() {
-        const productFinderLaptops:string = 'Product Finder'
-        return cy.contains(productFinderLaptops).trigger('mouseover');
+    public productFinderLaptops(): Cypress.Chainable<any> {
+        const productFinderLaptops: string = 'Product Finder'
+        return cy.contains(productFinderLaptops);
     }
-    laptoplink() {
-        const laptoplink:string = 'div>ul>li:nth-child(10)>ul>li:nth-child(3)>a';
+    public laptoplink(): Cypress.Chainable<any> {
+        const laptoplink: string = 'div>ul>li:nth-child(10)>ul>li:nth-child(3)>a';
         return cy.get(laptoplink)
     }
-    brandCheckBox() {
-        const brandCheckBox:string = '#brand_Asus';
+    public brandCheckBox(): Cypress.Chainable<any> {
+        const brandCheckBox: string = '#brand_Asus';
         return cy.get(brandCheckBox)
     }
-    asusLaptop() {
-        const asusLaptop:string = 'div:nth-child(1) > div._lpdscn > h3 > a'
-        return cy.get(asusLaptop)
+    public asusLaptop(): Cypress.Chainable<any> {
+        const asusLaptop: string = 'Asus VivoBook Ultra K14 (K413)'
+        return cy.contains(asusLaptop)
     }
 }
 export default laptops;
