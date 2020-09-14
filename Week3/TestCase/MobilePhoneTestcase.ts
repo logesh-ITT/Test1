@@ -2,11 +2,12 @@ import ScenarioforMobilephone from '../PageObjects/ScenarioforMobilephone';
 describe("MobilePhoneTestcase", function () {
     before(function () {
         cy.visit('/') //Homepage 
-    });
-    it('Compare Mobile phones', function () {
         const Mobile = new ScenarioforMobilephone();
         Mobile.compareMobiles().trigger('mouseover'); //mouseover to compare
         Mobile.clickTheMobiles().should('be.visible').click({ force: true }); //click the mobiles button
+    });
+    it('Compare Mobile phones', function () {
+        const Mobile = new ScenarioforMobilephone();
         Mobile.compareMobilesTextbox().should('be.visible').type('Samsung Galaxy M31s') //type in textbox
         Mobile.getMobilePhone().click() //getting that mobilephone
         Mobile.compareSecondMobilesTextbox().should('be.visible').type('apple iphone x') //type in textbox
